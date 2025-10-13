@@ -1,153 +1,209 @@
-/* =====================================================
-   trail-chatters – Global Stylesheet
-   Author: Myles Brown
-   Date: 10/4/25
-   ===================================================== */
+/*
+    Author: Myles Brown
+    Date: 10-12-25
+    File Name: styles.css
+*/
 
-/* ---- Reset and universal rules ---- */
-* {
+/* CSS Reset */
+body, header, nav, main, footer, img, h1 {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;            /* Helps keep layouts consistent */
+    border: 0;
 }
 
-/* ---- Global font and gradient background ---- */
-body {
-    font-family: Verdana, Arial, sans-serif;
-    /* Sunset gradient: brighter orange at top → deeper orange at bottom */
-    background: linear-gradient(to bottom, #ffb347, #ff6f47);
-    /* #ffb347 = light orange / #ff6f47 = deeper orange sunset */
-    color: #333;                        /* Dark text for readability */
-    line-height: 1.6;
-    min-height: 100vh;                   /* Ensures gradient fills screen */
-}
-
-/* ---- Main page container ---- */
-#container {
-    max-width: 1100px;                   /* Keep content from stretching too wide */
-    margin: 2em auto;                     /* Center container on the page */
-    background-color: #fff;               /* White content area on top of gradient */
-    padding: 1em;
-    border-radius: 6px;                   /* Slightly rounded edges */
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);   /* Soft shadow for depth */
-}
-
-/* ---- Header ---- */
-header {
-    background-color: #2b5d34;            /* Deep green for outdoorsy feel */
-    color: white;
-    padding: 1em;
-    text-align: center;
-    border-radius: 6px 6px 0 0;           /* Rounded top corners only */
-}
-
-header h1 {
-    font-size: 2em;
-}
-
-/* ---- Navigation bar ---- */
-nav {
-    background-color: #3f7848;            /* Slightly lighter green for nav */
-    text-align: center;
-    padding: 0.5em 0;
-    margin-top: 0.5em;
-    border-radius: 4px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0 1em;
-}
-
-nav a:hover {
-    color: #ffda77;                        /* Light gold hover effect */
-    text-decoration: underline;
-}
-
-/* ---- Main content ---- */
-main {
-    padding: 1em;
-}
-
-main h2,
-main h3 {
-    color: #2b5d34;
-    margin-bottom: 0.5em;
-}
-
-main p {
-    margin-bottom: 1em;
-}
-
-ul, ol {
-    margin-left: 2em;                       /* Indent lists for clarity */
-    margin-bottom: 1em;
-}
-
-/* ---- Image styles ---- */
+/* Image rule */
 img {
-    max-width: 100%;                         /* Keep images responsive */
-    height: auto;
+    max-width: 100%;
     display: block;
-    margin: 1em auto;                         /* Center and add spacing */
-    border-radius: 4px;                       /* Slightly rounded edges */
 }
 
-/* ---- Form styles ---- */
-form {
-    background-color: #f9f9f9;
-    padding: 1em;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+/* Box sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Mobile Viewport */
+
+/* Hide tab-desk class */
+.tab-desk {
+    display: none;
+}
+
+/* Header */
+header {
+    text-align: center;
+    font-size: 1.5em;
+    color: #373684;
+    font-family: "DM Serif Display", serif;
+}
+
+/* Main font */
+main {
+    font-family: "Roboto", sans-serif;
+    padding: 2%;
+    background-color: #e3e3e3;
+    overflow: auto;
+}
+
+/* Navigation */
+nav {
+    background-color: #373684;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    display: block;
+    border-top: 1px solid #5e5e5e;
+}
+
+nav li {
+    display: block;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+/* Paragraphs */
+main p {
+    font-size: 1.25em;
+}
+
+/* Table Styles */
+#rental table {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #373684;
+    border-collapse: collapse;
+}
+
+#rental caption {
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-bottom: 1em;
+}
+
+#rental th, #rental td {
+    border: 1px solid #373684;
+    padding: 1%;
+}
+
+#rental th {
+    background-color: #373684;
+    color: #fff;
+}
+
+/* Mobile Style Rule for #rental */
+@media screen and (max-width: 549px) {
+    /* Style rules for table */
+    table {
+        border: 1px solid #373684;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    caption {
+        font-weight: bold;
+        font-size: 1.25em;
+        margin: 1em;
+    }
+
+    th, td {
+        border: 1px solid #373684;
+        padding: 0.5em;
+    }
+
+    th {
+        background-color: #373684;
+        color: #fff;
+    }
+}
+
+/* Style rules for form elements */
+fieldset, input {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
 label {
     display: block;
-    margin-bottom: 0.3em;
-    font-weight: bold;
+    margin-top: 3%;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: Verdana, Arial, sans-serif;
-}
-
-input[type="submit"] {
-    background-color: #2b5d34;
-    color: white;
-    padding: 0.5em 1.2em;
+form #submit {
+    display: block;
+    margin: 0 auto;
+    background-color: #373684;
+    color: #fff;
+    padding: 3%;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    font-size: 1em;
 }
 
-input[type="submit"]:hover {
-    background-color: #3f7848;
+/* Tablet Viewport */
+@media screen and (min-width: 550px) {
+    .tab-desk { display: block; }
+    .mobile { display: none; }
+
+    nav li {
+        display: inline-block;
+        font-size: 1.5em;
+        border-right: 1px solid #e5e9fc;
+        padding: 0.25em 0.5em;
+    }
+
+    nav li:last-child { border-right: none; }
+
+    #map {
+        width: 500px;
+        height: 450px;
+    }
+
+    /* Tablet: form layout */
+    form {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
-/* ---- Footer ---- */
-footer {
-    background-color: #2b5d34;
-    color: white;
-    text-align: center;
-    padding: 0.8em;
-    margin-top: 2em;
-    font-size: 0.9em;
+/* Desktop Viewport */
+@media screen and (min-width: 769px) {
+    header { padding: 2%; }
+
+    nav li a {
+        padding: 0.5em 1.5em;
+    }
+
+    nav li a:hover {
+        color: #373684;
+        background-color: #e5e5e5;
+    }
+
+    /* Desktop: form grid layout */
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
+    .btn {
+        grid-column: 1 / span 2;
+    }
 }
 
-footer a {
-    color: #ffda77;                          /* Gold-colored links in footer */
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+/* Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
 }
