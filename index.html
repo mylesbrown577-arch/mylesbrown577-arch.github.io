@@ -1,58 +1,61 @@
 <!DOCTYPE html>
-<!-- Trail Chatters
-     index.html – Home page
-     Author: Myles Brown
-     Date: 9/28/25 -->
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>trail-chatters – Home</title>
+    <!-- 
+        Student Name: Myles Brown
+        File Name: index.html
+        Date: 9-9-25
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Strike a Chord: Home Page</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Step 21: Favicon and App Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
 
-<div id="container">
-    <!-- ===== Header area: site title/logo ===== -->
+<body>
     <header>
-        <h1>Trail Chatters</h1>
+        <h1><span class="tab-desk">&#9836;</span> Strike a Chord <span class="tab-desk">&#9836;</span></h1>
     </header>
 
-    <!-- ===== Navigation bar linking all pages ===== -->
     <nav>
         <p>
-            <a href="index.html">Home</a> &nbsp; &#9838; &nbsp;
-            <a href="forum.html">Forums</a> &nbsp; &#9838; &nbsp;
-            <a href="trails.html">Trails</a> &nbsp; &#9838; &nbsp;
-            <a href="inquiries.html">Inquiries</a> &nbsp; &#9838; &nbsp;
-            <a href="aboutUs.html">About Us</a>
+            <a href="index.html">Home</a> &nbsp; &#9830; &nbsp;
+            <a href="lessons.html">Lessons</a> &nbsp; &#9830; &nbsp;
+            <a href="instructors.html">Instructors</a> &nbsp; &#9830; &nbsp;
+            <a href="rentals.html">Rentals</a> &nbsp; &#9830; &nbsp;
+            <a href="contact.html">Contact</a>
         </p>
     </nav>
 
-    <!-- ===== Main content area ===== -->
+    <!-- Hero Image -->
+    <div id="hero" class="tab-desk">
+        <img src="images/music-notes.jpg" alt="colorful music notes">
+    </div>
+
     <main>
-        <h2>Welcome to Trail Chatters!</h2>
-        <p>Join a growing community of off-road enthusiasts. Whether you’re new to dirt trails or an experienced crawler, you’ll find a friendly spot to ask questions, share adventures, and show off your rig.</p>
+        <!-- Home page content -->
+        <p>Welcome to Strike a Chord. We are a local music store, specializing in lessons and rental equipment. Our mission is to provide world-class instruction with each music lesson.</p>
 
-        <!-- Sample image banner -->
-        <img src="images/three-jeeps.jpg" alt="Three jeeps on a trail" width="500">
-
-        <section>
-            <h3>Latest Hot Topics</h3>
-            <ul>
-                <li><a href="forum.html#tires">Best All-Terrain Tires for Mud & Snow</a></li>
-                <li><a href="forum.html#winch">Choosing the Right Winch for Beginners</a></li>
-                <li><a href="trails.html#blue-ridge">Blue Ridge Trail Condition Report</a></li>
-            </ul>
-        </section>
+        <p>We provide lessons for several musical instruments, including piano, guitar, bass, and violin. Your first two lessons are <span class="action">FREE</span>. Contact us today to get started!</p>
     </main>
 
-    <!-- ===== Footer area ===== -->
     <footer>
-        <a href="mailto:trailchatters@gmail.com">trailchatters@gmail.com</a> &mdash;
-        <a href="tel:+16786028003">Call us at 678-602-8003</a>
-        <p>&copy; 2025 Trail Chatters. All Rights Reserved.</p>
+        <p>&copy; Copyright 2025. All Rights Reserved.</p>
+        <p><a href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a></p>
     </footer>
-</div>
-
 </body>
 </html>
