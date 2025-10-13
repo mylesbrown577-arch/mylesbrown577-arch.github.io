@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Student Name: Myles Brown
+        File Name: contact.html
+        Date: 9-12-25
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+
+    <!-- Step 21: Favicon and App Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Strike a Chord: Contact</title>
+</head>
+
+<body>
+    <header>
+        <h1><span class="tab-desk">&#9836;</span> Strike a Chord <span class="tab-desk">&#9836;</span></h1>
+    </header>
+
+    <nav>
+        <p>
+            <a href="index.html">Home</a> &nbsp; &#9830; &nbsp;
+            <a href="lessons.html">Lessons</a> &nbsp; &#9830; &nbsp;
+            <a href="instructors.html">Instructors</a> &nbsp; &#9830; &nbsp;
+            <a href="rentals.html">Rentals</a> &nbsp; &#9830; &nbsp;
+            <a href="contact.html">Contact</a>
+        </p>
+    </nav>
+
+    <main>
+        <!-- Use the main area to add the main content to the webpage -->
+
+        <h2>Contact Us</h2>
+
+        <p class="tel-link mobile">
+            <a href="tel:8145559228">(814) 555-9228</a>
+        </p>
+        <p class="tab-desk">(814) 555-9228</p>
+
+        <p>
+            <a href="mailto:lessons@strikeachord.net" class="email-link">lessons@strikeachord.net</a>
+        </p>
+
+        <form action="mailto:lessons@strikeachord.net" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2025. All Rights Reserved.</p>
+        <p><a href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a></p>
+    </footer>
+</body>
+</html>
