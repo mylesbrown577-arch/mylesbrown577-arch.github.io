@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        Student Name: Myles Brown
+        File Name: rental.html
+        Date: 10-12-25
+    -->
+    <meta charset="UTF-8">
+    <title>Strike a Chord: Rentals</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Favicon and App Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>&#9836; Strike a Chord &#9836;</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="rental.html">Rentals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Step 2: Add div with id "rental" -->
+        <div id="rental">
+
+            <!-- Step 3: Add heading 2 element -->
+            <h2>We rent many different kinds of musical equipment. See our rental rates below.</h2>
+
+            <!-- Step 4: Add table with caption -->
+            <table>
+                <caption>Rental Rates</caption>
+
+                <!-- Step 5–8: Table rows and data -->
+                <tr><!-- Row 1 -->
+                    <th>Equipment</th>
+                    <th>Daily Rate</th>
+                    <th>Weekend Rate</th>
+                </tr>
+
+                <tr><!-- Row 2 -->
+                    <td>Guitars</td>
+                    <td>$25</td>
+                    <td>$40</td>
+                </tr>
+
+                <tr><!-- Row 3 -->
+                    <td>Keyboards</td>
+                    <td>$35</td>
+                    <td>$60</td>
+                </tr>
+
+                <tr><!-- Row 4 -->
+                    <td>Drum Kits</td>
+                    <td>$50</td>
+                    <td>$75</td>
+                </tr>
+
+                <tr><!-- Row 5 -->
+                    <td>Microphones</td>
+                    <td>$10</td>
+                    <td>$15</td>
+                </tr>
+
+                <tr><!-- Row 6 -->
+                    <td>DJ Equipment</td>
+                    <td>$22</td>
+                    <td>$38</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Step 14–17: Add form -->
+        <form>
+            <fieldset>
+                <legend>Customer Information</legend>
+
+                <label for="fName">First Name:</label>
+                <input type="text" name="fName" id="fName">
+
+                <label for="lName">Last Name:</label>
+                <input type="text" name="lName" id="lName">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone">
+            </fieldset>
+
+            <fieldset>
+                <legend>Musical Interest</legend>
+                <p>I am interested in:</p>
+
+                <label for="guitars">
+                    <input type="checkbox" name="interest" id="guitars" value="Guitar Lessons"> Guitar Lessons
+                </label>
+
+                <label for="pianos">
+                    <input type="checkbox" name="interest" id="pianos" value="Piano Lessons"> Piano Lessons
+                </label>
+
+                <label for="violins">
+                    <input type="checkbox" name="interest" id="violins" value="Violin Lessons"> Violin Lessons
+                </label>
+
+                <label for="rent">
+                    <input type="checkbox" name="interest" id="rent" value="Rental Equipment"> Rental Equipment
+                </label>
+            </fieldset>
+
+            <input type="submit" id="submit" value="Submit" class="btn">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2025. All Rights Reserved.</p>
+        <p><a href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a></p>
+    </footer>
+</body>
+</html>
