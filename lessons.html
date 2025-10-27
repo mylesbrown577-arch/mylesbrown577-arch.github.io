@@ -4,17 +4,18 @@
     <!-- 
         Student Name: Myles Brown
         File Name: lessons.html
-        Date: 10-19-25
+        Date: 9-14-25
     -->
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strike a Chord: Lessons</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
-    
-    <!-- Link to external CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
 
     <!-- Step 21: Favicon and App Icons -->
@@ -27,29 +28,28 @@
 
 <body>
     <header>
-        <h1>&#9836; Strike a Chord &#9836;</h1>
+        <h1><span class="tab-desk">&#9836;</span> Strike a Chord <span class="tab-desk">&#9836;</span></h1>
     </header>
 
     <nav>
-        <p>
-            <a href="index.html">Home</a> &nbsp; &#9830; &nbsp;
-            <a href="lessons.html">Lessons</a> &nbsp; &#9830; &nbsp;
-            <a href="instructors.html">Instructors</a> &nbsp; &#9830; &nbsp;
-            <a href="rentals.html">Rentals</a> &nbsp; &#9830; &nbsp;
-            <a href="contact.html">Contact</a>
-        </p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="instructors.html">Instructors</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
     <main>
-        <!-- Use the main area to add the main content to the webpage -->
-
+        <!-- Main content -->
         <h2>Private Lessons</h2>
+
         <p>Strike a Chord offers private lessons for several instruments. Our professional instructors are skilled musicians and experienced teachers. Lessons are available for the following instruments:</p>
 
-
-                <!-- Piano Section -->
+        <!-- Piano Section -->
         <h4>Piano Spring Performance</h4>
-        <audio controls="controls">
+        <audio controls>
             <source src="media/piano.mp3" type="audio/mp3">
             <source src="media/piano.ogg" type="audio/ogg">
             <p>Your browser does not support the HTML5 audio element.</p>
@@ -57,7 +57,7 @@
 
         <!-- Guitar Section -->
         <h4>Guitar Winter Performance</h4>
-        <audio controls="controls">
+        <audio controls>
             <source src="media/guitar.mp3" type="audio/mp3">
             <source src="media/guitar.ogg" type="audio/ogg">
             <p>Your browser does not support the HTML5 audio element.</p>
@@ -65,12 +65,13 @@
 
         <!-- Violin Section -->
         <h4>Violin Spring Performance</h4>
-        <audio controls="controls">
+        <audio controls>
             <source src="media/violin.mp3" type="audio/mp3">
             <source src="media/violin.ogg" type="audio/ogg">
             <p>Your browser does not support the HTML5 audio element.</p>
         </audio>
 
+        <!-- Instrument List -->
         <dl>
             <dt>Piano</dt>
             <dd>Classical, jazz, and popular styles</dd>
@@ -88,7 +89,7 @@
 
     <footer>
         <p>&copy; Copyright 2025. All Rights Reserved.</p>
-        <p>lessons@strikeachord.net</p>
+        <p><a href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a></p>
     </footer>
 </body>
 </html>
