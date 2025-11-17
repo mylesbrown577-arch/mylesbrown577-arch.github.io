@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- Trail Chatters
+     inquiries.html – Contact / inquiry form
+     Author: Myles Brown
+     Date: 9/28/25 -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Trail Chatters – Inquiries</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="container">
+
+    <header>
+        <h1>Trail Chatters – Contact Us</h1>
+    </header>
+
+    <nav>
+        <p>
+            <a href="index.html">Home</a> &nbsp; &#9838; &nbsp;
+            <a href="forum.html">Forums</a> &nbsp; &#9838; &nbsp;
+            <a href="trails.html">Trails</a> &nbsp; &#9838; &nbsp;
+            <a href="inquiries.html">Inquiries</a> &nbsp; &#9838; &nbsp;
+            <a href="aboutUs.html">About Us</a>
+        </p>
+    </nav>
+
+    <main>
+        <h2>We’d Love to Hear From You</h2>
+        <p>Fill out the form below or reach us directly by phone or email.</p>
+
+        <!-- Contact Form -->
+        <form>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" cols="40" required></textarea><br><br>
+
+            <input type="submit" value="Submit Inquiry">
+        </form>
+
+        <!-- Map Section -->
+        <section id="map">
+            <h3>Find Trails Near You</h3>
+
+            <iframe
+                width="100%"
+                height="300"
+                style="border:0;"
+                loading="lazy"
+                allowfullscreen
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.5809987073166!2d-84.15932591547159!3d34.63605135745102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8880cbb6dfbf6ef1%3A0x47e9ce18f17d9658!2sWinding%20Stair%20Gap%20Road%2C%20Dahlonega%2C%20GA%2030563!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <a href="mailto:trailchatters@gmail.com">trailchatters@gmail.com</a> &mdash;
+        <a href="tel:+16786028003">678-602-8003</a>
+        <p>&copy; 2025 Trail Chatters. All Rights Reserved.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
